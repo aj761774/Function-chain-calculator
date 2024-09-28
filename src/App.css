@@ -1,0 +1,77 @@
+body {
+  position: relative;
+}
+.cards-container {
+  gap: 131px;
+  padding: 80px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.card-with-intial-input-or-result {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  gap: 9px;
+}
+
+
+.card-with-intial-input-or-result.result-card {
+  flex-direction: row;
+}
+
+.card-with-intial-input-or-result.result-card .initial-value-or-result-input {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.initial-value-or-result-input input,
+.initial-value-or-result-input > div {
+  height: 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 2px solid #FFC267;
+  border-right-width: 0;
+  max-width: 90px;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  padding: 14px 20px;
+}
+
+.initial-value-or-result-input > div {
+  width: 50px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 2px solid #FFC267;
+  border-left-width: 1px;
+}
+
+
+.result-card .initial-value-or-result-input input,
+.result-card .initial-value-or-result-input > div {
+  border: 2px solid #2DD179;
+}
+
+.result-card .initial-value-or-result-input > div {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-left: 10px;
+}
+
+.result-card .initial-value-or-result-input input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left-width: 0;
+}
